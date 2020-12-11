@@ -20,6 +20,7 @@ namespace HTTPExample
     }
     class Program
     {
+        //https://api.nasa.gov/planetary/apod?api_key=9fE9WVzv1ccw53NHc7Iw29alSpJ65XcljtdvYrrs -> moje API na nasa
         static async Task Main(string[] args) //kvůli posílání informací na web -> nezapomenout using
         {
             Person Dalsi = new Person { Name = "Martin", LastName = "Stránský", Age = 24 };
