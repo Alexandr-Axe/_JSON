@@ -28,7 +28,12 @@ namespace HTTPExample
 
             HttpClient htc = new HttpClient();
             HttpContent htcContent = new StringContent(JsonDalsi, Encoding.UTF8, "application/json"); //identifikátor, který říká, jakého typu je informace, kterou posílám (konkrétně json)
-            HttpResponseMessage hrm = await htc.PostAsync("http://ptsv2.com/t/varta1", htcContent);
+            HttpResponseMessage hrm = await htc.PostAsync("http://ptsv2.com/t/7q0dq-1607691180/post", htcContent);
+
+            /*while (true)
+            {
+                await htc.PostAsync("http://ptsv2.com/t/7q0dq-1607691180/post", htcContent);
+            }*/
 
             Console.WriteLine(hrm);
         }
